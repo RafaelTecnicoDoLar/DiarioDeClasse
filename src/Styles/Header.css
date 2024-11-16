@@ -1,0 +1,15 @@
+Header {
+    background-color: #1A2B45;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.Logo {
+    border-radius: 50%;
+    border: 0.2rem solid #D4A017;
+    height: 12rem;
+    margin: 1rem;
+
+}
