@@ -2,8 +2,9 @@ Header {
     background-color: #1A2B45;
     color: white;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 .Logo {
@@ -12,4 +13,8 @@ Header {
     height: 12rem;
     margin: 1rem;
 
+}
+
+.LogoRedes{
+    height: 4rem;
 }
