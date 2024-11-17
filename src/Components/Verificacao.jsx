@@ -1,17 +1,21 @@
-import "./Login.jsx"
-import { useState } from "react";
+import Login from "./Login.jsx";
+import AreaDoEstudante from "./AreaDoEstudante.jsx"
 
 function Verificacao() {
 
-    const [logado, useLogado] = useState(false)
-    
-    return (
-        <div>
-            {logado == false(
-                <Login />
-            )}
+if(logado == false){
+    <Login />
 
-        </div>
+} else {
+    <AreaDoEstudante />
+
+}
+
+    return (
+        <>
+
+        </>
+
     )
 }
 

@@ -1,13 +1,16 @@
 import "../Styles/Login.css"
 import { useState } from "react";
 
+import Verificacao from "./Verificacao";
+
 function Login() {
 
     const [usuario, setUsuario] = useState();
     const [senha, setSenha] = useState();
+    const [logado, useLogado] = useState(false)
 
     function BotaoEnviar() {
-        alert("Funfou")
+        useLogado = true;
 
     }
     return (
