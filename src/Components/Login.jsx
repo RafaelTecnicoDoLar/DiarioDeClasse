@@ -1,8 +1,6 @@
 import "../Styles/Login.css"
 import { useState } from "react";
 
-import Verificacao from "./Verificacao";
-
 function Login() {
 
     const [usuario, setUsuario] = useState();
@@ -10,9 +8,11 @@ function Login() {
     const [logado, useLogado] = useState(false)
 
     function BotaoEnviar() {
-        useLogado = true;
+        useLogado(true);
+        alert("logado")
 
     }
+
     return (
         <div className="Login">
             <div className="FraseBoasVindas">
@@ -23,27 +23,27 @@ function Login() {
 
             </div>
 
-                <form className="Formulario">
-                    <h2 className="Text">
-                        Login
-                    </h2>
+            <form className="Formulario">
+                <h2 className="Text">
+                    Login
+                </h2>
 
-                    <input className="Input" type="text" name="Digite seu Login" placeholder="Digite seu Login" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
+                <input className="Input" type="text" name="Digite seu Login" placeholder="Digite seu Login" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
 
-                    <h2 className="Text">
-                        Senha
-                    </h2>
+                <h2 className="Text">
+                    Senha
+                </h2>
 
-                    <input className="Input" type="password" name="Digite sua senha" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
+                <input className="Input" type="password" name="Digite sua senha" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
 
-                    <div>
-                        <button className="Botao" onClick={BotaoEnviar}> Enviar </button>
+                <div>
+                    <button className="Botao" onClick={BotaoEnviar}> Enviar </button>
 
-                        <a href="#"> Esqueci a senha</a>
+                    <a href="#"> Esqueci a senha</a>
 
-                    </div>
+                </div>
 
-                </form>
+            </form>
 
         </div>
     )
