@@ -1,32 +1,62 @@
 import '../Styles/AreaDoProfessor.css'
 import ItensTabela from "./ItensTabela.jsx"
 
+
 export default function AreaDoProfessor() {
     return (
-        <table className="Tabela">
-            <thead>
-                <tr>
-                    <th className="Nome">
-                        Nome
-                    </th>
+        <div className="tabela">
 
-                    <th className="Nota">
-                        Nota
-                    </th>
+            <h1 className="Titulo">
+                Diario de classe digital
+            </h1>
 
-                </tr>
+            <h2 className="SubTitulo">
+                Turma: 3ºA Vespertino   Professor orientador: Giovanni Rodrigues
 
-            </thead>
+            </h2>
 
-            <tbody>
-                <ItensTabela Nome="Rafael" Nota1="9.8" Nota2="9.8" Nota3="9.8" Nota4="9.8"/>
-                <ItensTabela Nome="Vinicius" Nota="9.8" />
-                <ItensTabela Nome="Danilo" Nota="7.9" />
-                <ItensTabela Nome="Leonardo" Nota="7.8" />
+            <table className="Tabela">
+                <thead>
+                    <tr>
+                        <th className="Nome">
+                            Nome
+                        </th>
 
-            </tbody>
+                        <th className="Nota">
+                            1º Bimestre
+                        </th>
 
+                        <th className="Nota">
+                            2º Bimestre
+                        </th>
 
-        </table>
+                        <th className="Nota">
+                            3º Bimestre
+                        </th>
+
+                        <th className="Nota">
+                            4º Bimestre
+                        </th>
+
+                        <th className="Nota">
+                            5º Conceito
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    <ItensTabela Nome="Rafael" Nota1="9.8" Nota2="9.8" Nota3="9.8" Nota4="9.8" Media />
+                    <ItensTabela Nome="Vinicius" Nota1="9.8" Nota2="9.8" Nota3="9.8" Nota4="9.8" Media />
+                    <ItensTabela Nome="Danilo" Nota1="9.8" Nota2="9.8" Nota3="9.8" Nota4="9.8" Media/>
+                    <ItensTabela Nome="Leonardo" Nota1="9.8" Nota2="9.8" Nota3="9.8" Nota4="9.8" Media/>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
     )
 }
