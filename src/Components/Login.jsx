@@ -28,13 +28,13 @@ function Login() {
                         Login
                     </h2>
 
-                    <input type="text" name="Digite seu Login" placeholder="Digite seu Login" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
+                    <input className="Input" type="text" name="Digite seu Login" placeholder="Digite seu Login" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
 
                     <h2 className="Text">
                         Senha
                     </h2>
 
-                    <input type="password" name="Digite sua senha" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
+                    <input className="Input" type="password" name="Digite sua senha" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
 
                     <div>
                         <button className="Botao" onClick={BotaoEnviar}> Enviar </button>

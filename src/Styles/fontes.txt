@@ -1,5 +1,11 @@
 Fundo Principal: Azul marinho escuro (#1A2B45) - um fundo sóbrio e elegante que dá destaque aos elementos de texto e botões.
 
+Cor de fundo componente: Azul claro (#F0F4FA)
+
+Cor defundo formulario: Branco (#FFFFFF)
+
+Borda ou sombra leve n formulario: cinza (#A8A8A8)
+
 Texto Principal: Branco (#FFFFFF) - para contraste com o fundo e facilitar a leitura.
 
 Texto Secundário/Detalhes: Cinza claro (#D3D6DB) - ideal para subtítulos, descrições e textos auxiliares.

@@ -1,12 +1,24 @@
 .Login {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.FraseBoasVindas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .Formulario {
-    background-color: rgb(221, 218, 218);
+    background-color: white;
+    border: 0.2rem solid #A8A8A8;
     display: block;
     margin: 0rem 0.5rem 0.5rem 0.5rem;
+    min-width: 20rem;
+    min-height: 20rem;
 }
 
 .Text {
@@ -14,11 +26,18 @@
     font-size: 3rem;
 }
 
-.Botao{
+.Input {
+    min-height: 1.5rem;
+    min-width: 15rem;
+    margin-left: 1rem;
+
+}
+
+.Botao {
     background-color: #D4A017;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 2rem;
-
+    margin: 1rem 1rem 1rem 1rem
 }
