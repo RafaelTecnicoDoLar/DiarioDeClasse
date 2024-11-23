@@ -21,7 +21,7 @@ export default function AreaDoProfessor() {
             </h1>
 
             <h2 className="SubTitulo">
-                Turma: 3ºA Vespertino   Professor orientador: Giovanni Rodrigues
+                Turma: Desenvolvimento WEB Integral Professor orientador: Giovanni Rodrigues
 
             </h2>
 
