@@ -1,24 +1,40 @@
-import ItensUsuarios from "./ItensUsers"
+import '../Styles/Usuarios.css'
+import ItensUsers from "./ItensUsers"
+import db from "../assets/BancoDeDados/db.json"
 
-export default function Usuarios(){
-    return(
-        <table>
-            <thead>
-                <th>
-                    Usuario
-                </th>
+console.log(db)
 
-                <th>
-                    Senha
-                </th>
+export default function Usuarios() {
+    return (
+        <div className="tabela">
 
-            </thead>
+            <h1 className="Titulo">
+                Diario de classe digital
+            </h1>
 
-            <tbody>
-                {db.users.map(usuario => <ItensUsuarios usuario={users.nome} senha={users.senha} key={users.nome}/>)}
+            <table className="Tabela">
+                <thead>
+                    <tr>
+                        <th className="Usuario">
+                            Usuario
+                        </th>
 
-            </tbody>
-            
-        </table>
+                        <th className="Senha">
+                            Senha
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    {db.users.map(user => <ItensUsers usuario={user.nome} senha={user.senha} key={user.nome} />)}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
     )
 }

@@ -5,7 +5,7 @@ import logo from "../assets/Logo/Logo.webp"
 import Instagram from "../assets/RedesSociais/Instagram.png"
 import Twitter from "../assets/RedesSociais/Twitter.png"
 import Youtube from "../assets/RedesSociais/Youtube.png"
-import Menu from "../assets/Botao/menu.png"
+import Menu from "../assets/Botao/Menu.png"
 import Sair from "../assets/Botao/sair.png"
 
 function Header() {

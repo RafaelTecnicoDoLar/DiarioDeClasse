@@ -1,16 +1,18 @@
-export default function ItensUsuarios({usuario, senha}) {
+export default function ItensUsuarios({ usuario, senha }) {
+
     return (
-            <tr>
-                <td>
-                    {usuario}
+        <tr>
+            <td className="Usuario">
+                {usuario}
 
-                </td>
+            </td>
 
-                <td>
-                    {senha}
+            <td className="Senha">
+                {senha}
 
-                </td>
-            </tr>
-            
+            </td>
+
+        </tr>
+
     )
 }

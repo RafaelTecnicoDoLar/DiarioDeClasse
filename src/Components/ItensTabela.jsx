@@ -1,4 +1,4 @@
-export default function ItensTabela({nome, nota}) {
+export default function ItensTabela({ nome, nota }) {
 
     return (
         <tr>
@@ -8,7 +8,7 @@ export default function ItensTabela({nome, nota}) {
             </td>
 
             <td className="Nota">
-                <input type="text" value={nota}/>
+                <input type="text" value={nota} />
 
             </td>
 
