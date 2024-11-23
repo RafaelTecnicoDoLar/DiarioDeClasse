@@ -1,6 +1,7 @@
 .Titulo {
     font-size: 2rem;
     margin: 1rem;
+
 }
 
 .SubTitulo {
@@ -20,12 +21,14 @@
     min-height: 5rem;
     min-width: 15rem;
     margin: 1rem;
+
 }
 
 .Nome {
     border: 0.2rem solid #A8A8A8;
     font-size: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
+
 }
 
 .Nota {
@@ -33,4 +36,19 @@
     text-align: center;
     font-size: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
+
+}
+
+.Botoes{
+    display: flex;
+
+}
+
+.Botao {
+    background-color: #D4A017;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 2rem;
+    margin: 1rem 0rem 1rem 1rem;
 }

@@ -1,0 +1,18 @@
+footer{
+    background-color: #1A2B45;
+    display: flex;
+    align-items: center;
+}
+
+.LogoFooter {
+    border-radius: 50%;
+    border: 0.2rem solid #D4A017;
+    height: 6rem;
+    margin: 1rem;
+
+}
+
+.TituloRodape{
+    font-size: 1rem;
+    color: white;
+}
