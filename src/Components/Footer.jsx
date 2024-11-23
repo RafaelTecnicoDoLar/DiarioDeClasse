@@ -13,12 +13,23 @@ export default function Footer() {
                 Colégio Chase Atlantic ©2024 Todos os direitos reservados
             </p>
 
-            <img src={Vite} />
-            <p>
-                +
-            </p>
+            <div className="Realizacao">
+                <p>
+                    Projeto feito usando o
+                </p>
 
-            <img src={React} />
+                <div className="Logos">
+                    <img src={Vite} />
+
+                    <p>
+                        +
+                    </p>
+
+                    <img src={React} />
+
+                </div>
+
+            </div>
 
         </footer>
     )

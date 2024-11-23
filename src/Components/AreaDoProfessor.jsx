@@ -1,6 +1,6 @@
 import '../Styles/AreaDoProfessor.css'
 import ItensTabela from "./ItensTabela.jsx"
-
+import db from "../assets/BancoDeDados/db.json"
 
 export default function AreaDoProfessor() {
 
@@ -36,35 +36,17 @@ export default function AreaDoProfessor() {
                             1º Bimestre
                         </th>
 
-                        <th className="Nota">
-                            2º Bimestre
-                        </th>
-
-                        <th className="Nota">
-                            3º Bimestre
-                        </th>
-
-                        <th className="Nota">
-                            4º Bimestre
-                        </th>
-
-                        <th className="Nota">
-                            5º Conceito
-                        </th>
-
                     </tr>
 
                 </thead>
 
                 <tbody>
-                    <ItensTabela Nome="Rafael" Nota1="9.8" Nota2="9.8" Nota3="9.8" Nota4="9.8" Media />
-                    <ItensTabela Nome="Vinicius" Nota1="9.8" Nota2="9.8" Nota3="9.8" Nota4="9.8" Media />
-                    <ItensTabela Nome="Danilo" Nota1="9.8" Nota2="9.8" Nota3="9.8" Nota4="9.8" Media />
-                    <ItensTabela Nome="Leonardo" Nota1="9.8" Nota2="9.8" Nota3="9.8" Nota4="9.8" Media />
+                    {db.alunos.map(aluno => <ItensTabela nome={aluno.nome} nota={aluno.nota} key={aluno.nome}/>)}
 
                 </tbody>
 
             </table>
+
             <div className="Botoes">
                 <button className="Botao" onClick={Editar}> Editar </button>
 

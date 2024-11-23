@@ -1,7 +1,8 @@
-footer{
+footer {
     background-color: #1A2B45;
     display: flex;
     align-items: center;
+    
 }
 
 .LogoFooter {
@@ -12,7 +13,23 @@ footer{
 
 }
 
-.TituloRodape{
+.TituloRodape {
     font-size: 1rem;
     color: white;
+
+}
+
+.Realizacao {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 2rem;
+
+}
+
+.Logos {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+
 }

@@ -1,0 +1,25 @@
+{
+    "users": [
+        {"nome": "giovanni", "senha": 123},
+        {"nome": "BEATRIZ", "senha": 123},
+        {"nome": "DIEGO", "senha": 123},
+        {"nome": "EVANDRO", "senha": 123},
+        {"nome": "ISADORA", "senha": 123},
+        {"nome": "KAUAN", "senha": 123},
+        {"nome": "LORENZO", "senha": 123},
+        {"nome": "LUCAS", "senha": 123},
+        {"nome": "PABLO", "senha": 123},
+        {"nome": "RAFAEL", "senha": 123}
+    ],
+    "alunos": [
+        {"nome": "BEATRIZ", "nota": 0},
+        {"nome": "DIEGO", "nota": 0},
+        {"nome": "EVANDRO", "nota": 0},
+        {"nome": "ISADORA", "nota": 0},
+        {"nome": "KAUAN", "nota": 0},
+        {"nome": "LORENZO", "nota": 0},
+        {"nome": "LUCAS", "nota": 0},
+        {"nome": "PABLO", "nota": 0},
+        {"nome": "RAFAEL", "nota": 0}
+    ]
+}
