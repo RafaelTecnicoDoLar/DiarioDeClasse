@@ -1,51 +1,77 @@
 import "../Styles/Login.css"
 import { useState } from "react";
+import AreaDoProfessor from "./AreaDoProfessor"
 
 function Login() {
 
     const [usuario, setUsuario] = useState();
     const [senha, setSenha] = useState();
-    const [logado, useLogado] = useState(false)
+    const [logado, useLogado] = useState(false);
+    const [alerta, useAlerta] = useState();
 
-    function BotaoEnviar() {
-        useLogado(true);
-        alert("logado")
+    function BotaoEnviar(e) {
+        e.preventDefault()
+        if (usuario == "Rafael" && senha == 12345678) {
+            useLogado(true);
+
+        } else if (usuario == "Giovanni" && senha == 87654321) {
+            useLogado(true);
+
+        } else {
+            useAlerta("Acesso negado, confira o usuario e a senha e tente novamente");
+
+        }
 
     }
 
     return (
-        <div className="Login">
-            <div className="FraseBoasVindas">
-                <h2>
-                    Bem vindo ao diario de classe do Colégio Chase Atlantic
+        <div>
+            {logado ?
+                <AreaDoProfessor />
 
-                </h2>
+                :
 
-            </div>
+                <div className="Login">
+                    <div className="FraseBoasVindas">
+                        <h2>
+                            Bem vindo ao diario de classe do Colégio Chase Atlantic
 
-            <form className="Formulario">
-                <h2 className="Text">
-                    Login
-                </h2>
+                        </h2>
 
-                <input className="Input" type="text" name="Digite seu Login" placeholder="Digite seu Login" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
+                    </div>
 
-                <h2 className="Text">
-                    Senha
-                </h2>
+                    <form className="Formulario">
 
-                <input className="Input" type="password" name="Digite sua senha" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
+                        <h2 className="Text">
+                            Login
+                        </h2>
 
-                <div>
-                    <button className="Botao" onClick={BotaoEnviar}> Enviar </button>
+                        <input className="Input" type="text" name="Digite seu Login" placeholder="Digite seu Login" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
 
-                    <a href="#"> Esqueci a senha</a>
+                        <h2 className="Text">
+                            Senha
+                        </h2>
+
+                        <input className="Input" type="password" name="Digite sua senha" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
+
+                        <p className="Alerta">
+                            {alerta}
+                        </p>
+
+                        <div>
+                            <button className="Botao" onClick={BotaoEnviar}> Enviar </button>
+
+                            <a href="#"> Esqueci a senha</a>
+
+                        </div>
+
+                    </form>
 
                 </div>
 
-            </form>
-
+            }
         </div>
+
     )
 }
 

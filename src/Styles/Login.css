@@ -33,6 +33,11 @@
 
 }
 
+.Alerta {
+    color: #D9534F;
+    margin: 1rem;
+}
+
 .Botao {
     background-color: #D4A017;
     color: white;

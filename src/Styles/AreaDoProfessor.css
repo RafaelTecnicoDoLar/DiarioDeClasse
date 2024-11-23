@@ -1,10 +1,16 @@
-.Nome{
-    border: 0.2rem solid #A8A8A8;
-
+.Tabela {
+    border-collapse: collapse;
+    min-height: 5rem;
+    min-width: 15rem;
+margin: 1rem;
 }
 
-.Nota{
+.Nome {
     border: 0.2rem solid #A8A8A8;
     
 }
 
+.Nota {
+    border: 0.2rem solid #A8A8A8;
+    text-align: center;
+}
