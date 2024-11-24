@@ -9,20 +9,23 @@ Header {
 
 .Menu{
     height: 4rem;
+    
 }
 
 .Logo {
     border-radius: 50%;
     border: 0.2rem solid #D4A017;
-    height: 12rem;
+    height: 8rem;
     margin: 1rem;
 
 }
 
 .LogoRedes{
     height: 4rem;
+
 }
 
 .Sair {
     height: 4rem;
+
 }

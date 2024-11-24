@@ -1,0 +1,36 @@
+.SaibaMais {
+    background-color: #ecf4ff;
+    margin: 1rem;
+
+}
+
+.saibaHistoria {
+    display: flex;
+
+}
+
+.TituloHistoria {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.Historia {
+    font-size: 1.2rem;
+}
+
+.FotoColegio {
+    height: 20rem;
+}
+
+.Materias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.MateriasDitaticos {
+    height: 6rem;
+    margin-bottom: 1rem;
+
+}
