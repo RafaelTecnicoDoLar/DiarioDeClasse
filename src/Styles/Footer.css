@@ -2,7 +2,7 @@ footer {
     background-color: #1A2B45;
     display: flex;
     align-items: center;
-    
+
 }
 
 .LogoFooter {
@@ -23,7 +23,7 @@ footer {
     display: flex;
     flex-direction: column;
     color: white;
-    padding-left: 2rem;
+    padding-left: 4rem;
 
 }
 
@@ -31,5 +31,7 @@ footer {
     display: flex;
     justify-content: space-around;
     color: white;
+    align-items: center;
 
 }
+

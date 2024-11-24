@@ -33,13 +33,23 @@ export default function SaibaMais() {
                 </p>
 
                 <div className="Materias">
-                    <img className="MateriasDitaticos" src={Pitagoras} />
-                    <img className="MateriasDitaticos" src={Cambridge} />
-                    <img className="MateriasDitaticos" src={MeSalva} />
-                </div>
+                    <a className="botaoAnimacao" href="https://www.redepitagoras.com.br/" target="_blank" >
+                        <img className="MateriasDitaticos" src={Pitagoras} />
+                    </a>
 
+                    <a className="botaoAnimacao" href="https://www.cambridgeenglish.org/br/" target="_blank" >
+                        <img className="MateriasDitaticos" src={Cambridge} />
+
+                    </a>
+
+                    <a className="botaoAnimacao" href="https://www.mesalva.com/" target="_blank" >
+                    <img className="MateriasDitaticos" src={MeSalva} />
+
+                </a>
             </div>
 
         </div>
+
+        </div >
     )
 }

@@ -4,7 +4,8 @@ body{
 
 }
 
-Footer{
-    display: flex;
-
+.botaoAnimacao:hover {
+    transition-duration: 200ms;
+    opacity: 0.4;
+    
 }
