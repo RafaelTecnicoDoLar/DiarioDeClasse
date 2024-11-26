@@ -67,7 +67,7 @@ function Login() {
                                 </p>
 
                                 <div>
-                                    <button className="Botao" onClick={BotaoEnviar}> Enviar </button>
+                                    <button className="Botao botaoAnimacao" onClick={BotaoEnviar}> Enviar </button>
 
                                     <a href="#"> Esqueci a senha</a>
 
