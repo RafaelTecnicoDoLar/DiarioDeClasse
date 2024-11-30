@@ -3,7 +3,6 @@ import "./Login.jsx"
 
 import logo from "../assets/Logo/Logo.webp"
 import Menu from "../assets/Botao/Menu.png"
-import Sair from "../assets/Botao/sair.png"
 
 import Instagram from "../assets/RedesSociais/Instagram.png"
 import Twitter from "../assets/RedesSociais/Twitter.png"
@@ -41,7 +40,6 @@ function Header() {
 
             </div>
 
-            <img className="Sair" src={Sair} />
         </header>
     )
 }

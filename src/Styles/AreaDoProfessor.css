@@ -1,3 +1,9 @@
+.Container_cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .Titulo {
     font-size: 2rem;
     margin: 1rem;
@@ -7,6 +13,26 @@
 .SubTitulo {
     font-size: 1rem;
     margin: 1rem;
+
+}
+
+.Sair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D4A017;
+    color: white;
+    font-size: 1rem;
+    border-radius: 2rem;
+    width: 5.5rem;
+    height: 3rem;
+}
+
+.ImgSair {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    padding: 0rem;
 
 }
 
@@ -39,7 +65,7 @@
 
 }
 
-.Botoes{
+.Botoes {
     display: flex;
 
 }

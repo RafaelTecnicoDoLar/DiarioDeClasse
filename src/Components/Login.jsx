@@ -1,5 +1,5 @@
 import "../Styles/Login.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import AreaDoProfessor from "./AreaDoProfessor";
 import SaibaMais from "./SaibaMais";
@@ -11,6 +11,18 @@ function Login() {
     const [logado, useLogado] = useState(false);
     const [alerta, useAlerta] = useState();
 
+    useEffect(() => {
+        let accessLS = localStorage.getItem("access_token");
+        console.log(accessLS);
+
+        if (accessLS != null) {
+            useLogado(true)
+        } else {
+            useLogado(false)
+        }
+
+    }, [])
+
     function BotaoEnviar(e) {
         e.preventDefault()
 
@@ -18,13 +30,15 @@ function Login() {
             email: usuario,
             password: senha
 
-        }).then(function(response) {
+        }).then(function (response) {
+            localStorage.setItem("access_token", response.data.access_token)
             console.log(response)
-            useLogado(true);
+            useLogado(true)
 
-        }).catch(function (error){
+        }).catch(function (error) {
             console.log(error);
             useAlerta("Acesso negado, confira o usuario e a senha e tente novamente");
+            useLogado(false)
 
         })
 
@@ -36,48 +50,48 @@ function Login() {
             {logado ?
                 <AreaDoProfessor />
 
-                : 
-                    <div>
-                        <div className="Login">
-                            <div className="FraseBoasVindas">
-                                <h2>
-                                    Bem vindo ao diario de classe do Colégio Chase Atlantic
+                :
+                <div>
+                    <div className="Login">
+                        <div className="FraseBoasVindas">
+                            <h2>
+                                Bem vindo ao diario de classe do Colégio Chase Atlantic
 
-                                </h2>
+                            </h2>
+
+                        </div>
+
+                        <form className="Formulario">
+
+                            <h2 className="Text">
+                                Login
+                            </h2>
+
+                            <input className="Input" type="text" name="Digite seu Login" placeholder="Digite seu Login" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
+
+                            <h2 className="Text">
+                                Senha
+                            </h2>
+
+                            <input className="Input" type="password" name="Digite sua senha" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
+
+                            <p className="Alerta">
+                                {alerta}
+                            </p>
+
+                            <div className="botoes">
+                                <button className="Botao botaoAnimacao" onClick={BotaoEnviar}> Enviar </button>
+
+                                <a className="esqueciASenha botaoAnimacao" href="#">  Esqueci a senha</a>
 
                             </div>
 
-                            <form className="Formulario">
-
-                                <h2 className="Text">
-                                    Login
-                                </h2>
-
-                                <input className="Input" type="text" name="Digite seu Login" placeholder="Digite seu Login" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
-
-                                <h2 className="Text">
-                                    Senha
-                                </h2>
-
-                                <input className="Input" type="password" name="Digite sua senha" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
-
-                                <p className="Alerta">
-                                    {alerta}
-                                </p>
-
-                                <div className="botoes">
-                                    <button className="Botao botaoAnimacao" onClick={BotaoEnviar}> Enviar </button>
-
-                                    <a className="esqueciASenha botaoAnimacao" href="#">  Esqueci a senha</a>
-
-                                </div>
-
-                            </form>
-
-                        </div>
-                        <SaibaMais />
+                        </form>
 
                     </div>
+                    <SaibaMais />
+
+                </div>
 
             }
 
