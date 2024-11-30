@@ -1,29 +1,32 @@
-import "../Styles/Login.css"
+import "../Styles/Login.css";
 import { useState } from "react";
-import AreaDoProfessor from "./AreaDoProfessor"
-import Usuarios from "./Usuarios"
-import SaibaMais from "./SaibaMais"
+import axios from "axios";
+import AreaDoProfessor from "./AreaDoProfessor";
+import SaibaMais from "./SaibaMais";
 
 function Login() {
 
     const [usuario, setUsuario] = useState();
     const [senha, setSenha] = useState();
     const [logado, useLogado] = useState(false);
-    const [autorizado, useAutorizado] = useState(false);
     const [alerta, useAlerta] = useState();
 
     function BotaoEnviar(e) {
         e.preventDefault()
-        if (usuario == "Rafael" && senha == 12345678) {
+
+        axios.post("https://base.carbonpass.com.br/geoblue/auth/login", {
+            email: usuario,
+            password: senha
+
+        }).then(function(response) {
+            console.log(response)
             useLogado(true);
 
-        } else if (usuario == "Giovanni" && senha == 87654321) {
-            useAutorizado(true);
-
-        } else {
+        }).catch(function (error){
+            console.log(error);
             useAlerta("Acesso negado, confira o usuario e a senha e tente novamente");
 
-        }
+        })
 
     }
 
@@ -33,11 +36,7 @@ function Login() {
             {logado ?
                 <AreaDoProfessor />
 
-                : autorizado ?
-
-                    <Usuarios />
-
-                    :
+                : 
                     <div>
                         <div className="Login">
                             <div className="FraseBoasVindas">
@@ -66,10 +65,10 @@ function Login() {
                                     {alerta}
                                 </p>
 
-                                <div>
+                                <div className="botoes">
                                     <button className="Botao botaoAnimacao" onClick={BotaoEnviar}> Enviar </button>
 
-                                    <a href="#"> Esqueci a senha</a>
+                                    <a className="esqueciASenha botaoAnimacao" href="#">  Esqueci a senha</a>
 
                                 </div>
 
