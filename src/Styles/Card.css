@@ -1,0 +1,28 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    height: 30rem;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.img {
+    height: 15rem;
+    width: 15rem;
+    padding-bottom: 1rem;
+}
+
+.Titulo {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.Subtitulo {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+
+}

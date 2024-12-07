@@ -1,0 +1,100 @@
+Estrutura da Página Home
+1. Header (Cabeçalho)
+Logo: O logotipo da EcoPaper.
+Menu de Navegação: Links para as seções "Home", "Sobre Nós", "Produtos", "Serviços", "Contato".
+Chamada para Ação (CTA): Um botão "Peça uma Amostra" ou "Entre em Contato".
+2. Hero Section (Seção Inicial)
+Texto de Destaque:
+"Transformando o Futuro com Sustentabilidade e Qualidade." "Descubra soluções inovadoras em papel e embalagens recicláveis."
+
+Imagem de Fundo: Uma floresta exuberante com folhas verdes ou uma fábrica sustentável.
+Botão: "Conheça nossos Produtos".
+3. Seção de Produtos
+Título: "Nossos Produtos"
+Texto introdutório:
+"Oferecemos produtos de alta qualidade que alinham tecnologia e respeito ao meio ambiente. Conheça nossa linha:"
+
+Produtos sugeridos:
+
+Papel Kraft Sustentável
+Descrição: Ideal para embalagens ecológicas e resistentes. Imagem: Um rolo de papel kraft reciclável.
+
+Caixas Personalizadas
+Descrição: Embalagens feitas sob medida para atender às necessidades do seu negócio. Imagem: Uma caixa personalizada com design moderno.
+
+Papéis para Escritório
+Descrição: Papéis reciclados de alta qualidade para impressão e uso diário. Imagem: Folhas de papel em uma mesa de escritório.
+
+Cartões e Etiquetas Ecológicas
+Descrição: Perfeitos para branding e rotulagem sustentável. Imagem: Cartões com designs minimalistas.
+
+4. Seção de Serviços
+Título: "Nossos Serviços"
+Texto introdutório:
+"Além de produtos sustentáveis, oferecemos soluções completas para nossos clientes."
+
+Serviços sugeridos:
+Consultoria em Embalagens Sustentáveis
+Descrição: Ajudamos empresas a migrar para soluções ecológicas. Imagem: Uma equipe discutindo designs de embalagem em uma sala de reunião.
+Produção Sob Demanda
+Descrição: Personalizamos produtos para atender a pedidos específicos. Imagem: Uma linha de produção moderna.
+Entrega Rápida e Segura
+Descrição: Garantimos a entrega no prazo, com embalagens seguras. Imagem: Um caminhão de transporte com o logotipo da EcoPaper.
+5. Seção de Sustentabilidade
+Título: "Compromisso com o Meio Ambiente"
+Texto:
+"Na EcoPaper, a sustentabilidade está no centro de tudo o que fazemos. Utilizamos materiais reciclados e processos ecoeficientes para minimizar o impacto ambiental."
+
+Imagem: Uma pilha de papéis reciclados ao lado de árvores saudáveis.
+Chamada para Ação: "Saiba mais sobre nossas iniciativas ambientais."
+6. Seção de Depoimentos
+Título: "O que nossos clientes dizem"
+Texto introdutório:
+"Empresas de todo o país confiam na EcoPaper para soluções sustentáveis."
+
+Exemplo de Depoimentos:
+"As embalagens da EcoPaper são incríveis! Qualidade e sustentabilidade em um só lugar." – João Silva, Gerente de Logística.
+"Nossos clientes amam saber que nossas caixas são 100% recicláveis." – Maria Fernandes, CEO de E-commerce.
+7. Seção de Blog/Novidades
+Título: "Dicas e Novidades"
+Sugestão de Posts:
+"Como Escolher Embalagens Sustentáveis para seu Negócio"
+(Imagem: Caixa de papel reciclável)
+"5 Maneiras de Reduzir o Uso de Plástico em Embalagens"
+(Imagem: Embalagem de papel kraft com uma bebida)
+"A Importância da Economia Circular na Indústria de Papel"
+(Imagem: Símbolo de reciclagem com folhas verdes ao fundo)
+8. Seção de Contato
+Título: "Entre em Contato"
+Texto:
+"Estamos prontos para atender você. Solicite uma amostra ou fale com nossa equipe!"
+
+Formulário de Contato:
+Nome, E-mail, Mensagem.
+Botões:
+"Enviar Mensagem"
+"Ligar Agora"
+Informações de Contato:
+Email: contato@ecopaper.com
+Telefone: (11) 9999-9999
+Endereço: Avenida Sustentável, 123, São Paulo, SP.
+9. Footer (Rodapé)
+Links Rápidos: Home, Sobre Nós, Produtos, Serviços, Contato.
+Redes Sociais: Ícones para Facebook, Instagram, LinkedIn.
+Texto:
+"© 2024 EcoPaper. Todos os direitos reservados."
+
+Imagens para o Site
+Você pode procurar ou gerar imagens para as seguintes seções:
+
+Hero Section: Floresta ou fábrica sustentável.
+Produtos: Fotos de rolos de papel, caixas de papelão, cartões ecológicos.
+Serviços: Pessoas trabalhando em equipe, caminhão de entrega.
+Sustentabilidade: Árvores, pilhas de papel reciclado.
+Blog/Novidades: Produtos ecológicos ou ícones relacionados à sustentabilidade.
+Contato: Imagem abstrata ou ícones relacionados à comunicação.
+Use plataformas como:
+
+Unsplash para fotos gratuitas.
+Canva para criar gráficos personalizados.
+DALL-E para gerar imagens excl

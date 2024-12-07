@@ -1,47 +1,30 @@
-import "../Styles/Header.css"
-import "./Login.jsx"
+import '../Styles/Header.css'
+import Logo from '../assets/Logo/Logo.png'
 
-import logo from "../assets/Logo/Logo.webp"
-import Menu from "../assets/Botao/Menu.png"
+import email from '../assets/Botao/email.png'
+import idioma from '../assets/Botao/idioma.png'
+import lupa from '../assets/Botao/lupa.png'
 
-import Instagram from "../assets/RedesSociais/Instagram.png"
-import Twitter from "../assets/RedesSociais/Twitter.png"
-import Youtube from "../assets/RedesSociais/Youtube.png"
-import Facebook from "../assets/RedesSociais/Facebook.png"
-
-function Header() {
+export default function Header() {
     return (
         <header>
+            <a href="/"> <img className='Logo botaoAnimacao' src={Logo} /> </a>
 
-            <img className="Menu" src={Menu} />
+            <div className='BoxLink'>
+                <a className="LinkinPark botaoAnimacao" href="/"> Home </a>
+                <a className="LinkinPark botaoAnimacao" href="/sobre"> Sobre nós </a>
+                <a className="LinkinPark botaoAnimacao" href="/blog"> Blog </a>
+                <a className="LinkinPark botaoAnimacao" href="/contato"> Contatos </a>
+                <a className="LinkinPark botaoAnimacao" href="/Ri"> Relação com investidores </a>
 
-            <img className="Logo" src={logo} />
+            </div>
 
-            <div>
-                <a className="botaoAnimacao" href="https://www.instagram.com/chaseatlantic/" target="_blank" >
-                    <img className="LogoRedes" src={Instagram} />
-
-                    </a>
-
-                    <a className="botaoAnimacao" href="https://x.com/ChaseAtlantic" target="_blank" >
-                        <img className="LogoRedes" src={Twitter} />
-
-                    </a>
-
-                    <a className="botaoAnimacao" href="https://www.youtube.com/channel/UCpvCJWgUNwZArGtJ00kDS1A" target="_blank" >
-                        <img className="LogoRedes" src={Youtube} />
-
-                    </a>
-
-                    <a className="botaoAnimacao" href="https://www.facebook.com/ChaseAtlantic/" target="_blank" >
-                        <img className="LogoRedes" src={Facebook} />
-
-                    </a>
+            <div className='BoxLink'>
+                <a href="mailto:rjonasmombellifranco@gmail.com?subject=Olá&body=Escreva sua mensagem aqui" target="_blank" > <img className="botao botaoAnimacao" src={email} /> </a>
+                <a href="/"> <img className="botao botaoAnimacao" src={idioma} /> </a>
 
             </div>
 
         </header>
     )
 }
-
-export default Header;
