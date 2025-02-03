@@ -17,9 +17,6 @@
 .Historia {
     font-size: 1.2rem;
     margin-right: 1rem;
-    display: flex;
-    align-items: center;
-
 }
 
 .FotoColegio {
@@ -30,7 +27,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    
 }
 
 .MateriasDitaticos {

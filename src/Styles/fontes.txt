@@ -15,6 +15,3 @@ Botões e Destaques: Dourado (#D4A017) - para elementos interativos, como botõe
 Bordas e Divisores: Cinza escuro (#A8A8A8) - para delinear seções ou destacar áreas específicas sem pesar na estética geral.
 
 Erro ou Avisos: Vermelho suave (#D9534F) - para mensagens de erro, mantendo a harmonia da paleta.
-
-login: andre@messias.io
-senha: asdf4567

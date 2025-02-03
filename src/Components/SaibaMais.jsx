@@ -2,7 +2,6 @@ import HistoriaColegio from "../assets/Fotos/HistoriaColegio.webp"
 import Pitagoras from "../assets/Fotos/Pitagoras.png"
 import Cambridge from "../assets/Fotos/Cambridge.png"
 import MeSalva from "../assets/Fotos/MeSalva.png"
-import EscolaDaInteligencia from "../assets/Fotos/EscolaDaInteligencia.png"
 
 import "../Styles/SaibaMais.css"
 
@@ -44,18 +43,12 @@ export default function SaibaMais() {
                     </a>
 
                     <a className="botaoAnimacao" href="https://www.mesalva.com/" target="_blank" >
-                        <img className="MateriasDitaticos" src={MeSalva} />
+                    <img className="MateriasDitaticos" src={MeSalva} />
 
-                    </a>
-
-                    <a className="botaoAnimacao" href="https://escoladainteligencia.com.br/" target="_blank" >
-                        <img className="MateriasDitaticos" src={EscolaDaInteligencia} />
-
-                    </a>
-                    
-                </div>
-
+                </a>
             </div>
+
+        </div>
 
         </div >
     )

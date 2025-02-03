@@ -1,27 +1,31 @@
-header {
-    background-color: #65d10c;
+Header {
+    background-color: #1A2B45;
+    color: white;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
-    padding: 2rem;
+    align-items: center;
 
+}
+
+.Menu{
+    height: 4rem;
+    
 }
 
 .Logo {
-    height: 8rem;
     border-radius: 50%;
-    background-color: white;
-    border: 0.2rem solid #008700;
-
-}
-
-.BoxLink {
-    display: flex;
-    justify-content: space-around;
+    border: 0.2rem solid #D4A017;
+    height: 8rem;
     margin: 1rem;
+
 }
 
-.Submit {
-    background-color: blue;
+.LogoRedes{
+    height: 4rem;
+
+}
+
+.Sair {
+    height: 4rem;
 
 }

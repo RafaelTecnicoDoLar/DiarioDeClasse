@@ -1,46 +1,29 @@
-import "../Styles/Login.css";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import AreaDoProfessor from "./AreaDoProfessor";
-import SaibaMais from "./SaibaMais";
+import "../Styles/Login.css"
+import { useState } from "react";
+import AreaDoProfessor from "./AreaDoProfessor"
+import Usuarios from "./Usuarios"
+import SaibaMais from "./SaibaMais"
 
 function Login() {
 
     const [usuario, setUsuario] = useState();
     const [senha, setSenha] = useState();
     const [logado, useLogado] = useState(false);
+    const [autorizado, useAutorizado] = useState(false);
     const [alerta, useAlerta] = useState();
-
-    useEffect(() => {
-        let accessLS = localStorage.getItem("access_token");
-        console.log(accessLS);
-
-        if (accessLS != null) {
-            useLogado(true)
-        } else {
-            useLogado(false)
-        }
-
-    }, [])
 
     function BotaoEnviar(e) {
         e.preventDefault()
+        if (usuario == "Rafael" && senha == 12345678) {
+            useLogado(true);
 
-        axios.post("https://base.carbonpass.com.br/geoblue/auth/login", {
-            email: usuario,
-            password: senha
+        } else if (usuario == "Giovanni" && senha == 87654321) {
+            useAutorizado(true);
 
-        }).then(function (response) {
-            localStorage.setItem("access_token", response.data.access_token)
-            console.log(response)
-            useLogado(true)
-
-        }).catch(function (error) {
-            console.log(error);
+        } else {
             useAlerta("Acesso negado, confira o usuario e a senha e tente novamente");
-            useLogado(false)
 
-        })
+        }
 
     }
 
@@ -50,48 +33,52 @@ function Login() {
             {logado ?
                 <AreaDoProfessor />
 
-                :
-                <div>
-                    <div className="Login">
-                        <div className="FraseBoasVindas">
-                            <h2>
-                                Bem vindo ao diario de classe do Colégio Chase Atlantic
+                : autorizado ?
 
-                            </h2>
+                    <Usuarios />
 
-                        </div>
+                    :
+                    <div>
+                        <div className="Login">
+                            <div className="FraseBoasVindas">
+                                <h2>
+                                    Bem vindo ao diario de classe do Colégio Chase Atlantic
 
-                        <form className="Formulario">
-
-                            <h2 className="Text">
-                                Login
-                            </h2>
-
-                            <input className="Input" type="text" name="Digite seu Login" placeholder="Digite seu Login" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
-
-                            <h2 className="Text">
-                                Senha
-                            </h2>
-
-                            <input className="Input" type="password" name="Digite sua senha" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
-
-                            <p className="Alerta">
-                                {alerta}
-                            </p>
-
-                            <div className="botoes">
-                                <button className="Botao botaoAnimacao" onClick={BotaoEnviar}> Enviar </button>
-
-                                <a className="esqueciASenha botaoAnimacao" href="#">  Esqueci a senha</a>
+                                </h2>
 
                             </div>
 
-                        </form>
+                            <form className="Formulario">
+
+                                <h2 className="Text">
+                                    Login
+                                </h2>
+
+                                <input className="Input" type="text" name="Digite seu Login" placeholder="Digite seu Login" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
+
+                                <h2 className="Text">
+                                    Senha
+                                </h2>
+
+                                <input className="Input" type="password" name="Digite sua senha" placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
+
+                                <p className="Alerta">
+                                    {alerta}
+                                </p>
+
+                                <div>
+                                    <button className="Botao botaoAnimacao" onClick={BotaoEnviar}> Enviar </button>
+
+                                    <a href="#"> Esqueci a senha</a>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <SaibaMais />
 
                     </div>
-                    <SaibaMais />
-
-                </div>
 
             }
 
